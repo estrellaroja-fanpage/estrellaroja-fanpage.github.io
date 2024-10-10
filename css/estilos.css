@@ -1,23 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 *{
-    font-family: "Roboto Flex", sans-serif;
+    /*fuente*/
+    font-family: "Montserrat", sans-serif;
 }
-
-
+h1,h2,h3,h4,h5,h6{
+   font-family: "Playwrite DE Grund", cursive;
+}
 h1{
-    color: #3c0e0e89;
+    font-size: 60px;
 }
 
-body{
-    background-color: #c7d4c0;
+header {
+    background: linear-gradient(to right, white 10%, #911212);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Añade espacio entre el logo y la navegación */
+    padding: 0 20px; /* Ajusta el padding horizontal si es necesario */
+    height: auto; /* Asegura que el header tome el tamaño de su contenido */
 }
 
-.fuenteNegrita{
-    font-weight: 700;
+.logo {
+    width: 200px;
+    height: auto; /* Asegura que la imagen mantenga su proporción */
 }
 
-#header{
-    background-color: #8686ef;
+header nav {
+    flex: 1; /* Permite que el nav ocupe el espacio restante */
+    display: flex;
+    justify-content: center; /* Centra el contenido del nav */
 }
 
+header nav ul {
+    list-style: none;
+    display: flex; /* Alinea los elementos horizontalmente */
+    margin: 0;
+    padding: 0;
+      
+}
+
+header nav ul li {
+    margin-right: 50px; /* Espacio entre los elementos del menú */
+}
+
+header nav ul li a {
+    color: black; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Esto asegura que los enlaces no tengan subrayado */
+    font-size: 40px; /* Tamaño más grande */
+}
+
+header nav ul li a:hover {
+    color: darkred; /* Color del texto al pasar el mouse por encima */
+}
+
+.tamanioUlHeader {
+    font-size: 20px; /* Ajusta el tamaño según prefieras */
+    font-weight: bold; /* Opcional: añade negrita para mayor énfasis */
+}
