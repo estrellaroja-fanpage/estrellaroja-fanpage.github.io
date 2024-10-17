@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 *{
     /*fuente*/
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 h1,h2,h3,h4,h5,h6{
    font-family: "Playwrite DE Grund", cursive;
@@ -11,18 +15,27 @@ h1{
     font-size: 60px;
 }
 
+.orbitron-RedStar {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: darkred;
+  }
+  
 header {
     background: linear-gradient(to right, white 10%, #911212);
     display: flex;
     align-items: center;
     justify-content: space-between; /* Añade espacio entre el logo y la navegación */
     padding: 0 20px; /* Ajusta el padding horizontal si es necesario */
-    height: auto; /* Asegura que el header tome el tamaño de su contenido */
+    height: 15vh; /* Asegura que el header tome el tamaño de su contenido */
 }
 
 .logo {
-    width: 200px;
-    height: auto; /* Asegura que la imagen mantenga su proporción */
+    width: auto;
+    height: 15vh;
+    border-radius: 50%; /* Asegura que la imagen mantenga su proporción */
 }
 
 header nav {
@@ -56,4 +69,20 @@ header nav ul li a:hover {
 .tamanioUlHeader {
     font-size: 20px; /* Ajusta el tamaño según prefieras */
     font-weight: bold; /* Opcional: añade negrita para mayor énfasis */
+    margin-top: 50px;
+}
+
+main {
+    height: 70vh;
+}
+
+
+.mainIndexBox {
+    background-image: url("../assets/img/Gemini_Generated_Image_id2hg7id2hg7id2h_apaisada.jpg");
+    width: auto;
+    height: 50vh;
+    font-size: 20px;
+    font-weight: bold;
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
 }
