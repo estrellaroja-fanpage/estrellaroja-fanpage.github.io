@@ -8,9 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 h1,h2,h3,h4,h5,h6{
    font-family: "Playwrite DE Grund", cursive;
 }
+
 h1{
     font-size: 60px;
 }
@@ -76,13 +78,44 @@ main {
     height: 70vh;
 }
 
+.contenido-principal { /* Nombre del nuevo contenedor */
+    background-color: transparent; /* Asegúrate que el fondo sea transparente */
+}
 
 .mainIndexBox {
-    background-image: url("../assets/img/Gemini_Generated_Image_id2hg7id2hg7id2h_apaisada.jpg");
-    width: auto;
     height: 50vh;
+    background-image: url("../assets/img/Gemini_Generated_Image_id2hg7id2hg7id2h_apaisada.jpg");
+    background-size: cover;
+    background-position: center;
     font-size: 20px;
     font-weight: bold;
-    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-    background-position: center; /* Centra la imagen en el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch; /* Apila los elementos verticalmente */
+    animation: subir 5s;
+}
+
+
+.parrafoPrincipal {
+    color: #f0efed;
+    padding: 1rem;
+    margin-top: inherit;
+    bottom: 0;
+    left: 20px;
+    margin-bottom: inherit;
+}
+
+
+@keyframes subir {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
